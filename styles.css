@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#app {
+  width: 700px;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#path-display {
+  font-weight: bold;
+}
+
+#windows {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#left-pane, #right-pane {
+  width: 50%;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#file-list, #folder-contents {
+  list-style-type: none;
+  padding: 0;
+}
+
+.folder, .file {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  width: 80px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.folder:hover, .file:hover {
+  background-color: #f0f0f0;
+}
+
+.folder {
+  background-color: #e7f1ff;
+}
+
+.file {
+  background-color: #fffae7;
+}
